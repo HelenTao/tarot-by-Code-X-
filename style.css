@@ -1,0 +1,146 @@
+:root {
+  --bg: #12111b;
+  --card: #1e1a2f;
+  --border: #4f3f85;
+  --text: #f5f2ff;
+  --accent: #8f73ff;
+  --accent-2: #d0a9ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: radial-gradient(circle at top, #2b2145, var(--bg) 45%);
+  color: var(--text);
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+header,
+footer {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+.card {
+  background: color-mix(in oklab, var(--card) 88%, black 12%);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 20%);
+}
+
+label,
+legend,
+p,
+small {
+  line-height: 1.5;
+}
+
+textarea,
+select,
+input[type="text"],
+button {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #6556a3;
+  background: #18142c;
+  color: var(--text);
+  padding: 0.7rem;
+  margin-top: 0.4rem;
+}
+
+button {
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  border: none;
+  color: #171223;
+  font-weight: 700;
+}
+
+button:hover {
+  filter: brightness(1.05);
+}
+
+fieldset {
+  margin: 1rem 0;
+  border: 1px solid #665aa3;
+  border-radius: 10px;
+}
+
+.difficulty-group {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.recommend-item {
+  border: 1px solid #6556a3;
+  border-radius: 10px;
+  padding: 0.8rem;
+  margin-top: 0.7rem;
+}
+
+.spread-image {
+  width: 100%;
+  max-width: 520px;
+  border: 1px solid #6556a3;
+  border-radius: 10px;
+  margin: 0.6rem 0;
+  background: #120f20;
+}
+
+.position-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.result-block {
+  border-top: 1px dashed #6f63ac;
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+}
+
+.reading-paragraph {
+  margin: 0.7rem 0;
+  padding: 0.75rem;
+  border-left: 3px solid #8f73ff;
+  background: #17132a;
+  border-radius: 8px;
+}
+
+@media (max-width: 680px) {
+  .position-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.collective-group,
+.collective-result {
+  border: 1px solid #5f4f99;
+  border-radius: 10px;
+  padding: 0.8rem;
+  margin-bottom: 0.9rem;
+  background: #151127;
+}

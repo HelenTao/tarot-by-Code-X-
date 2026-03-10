@@ -1,0 +1,5 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='500' height='260' viewBox='0 0 500 260'>
+<rect width='500' height='260' fill='#141024'/><text x='20' y='34' fill='#e9ddff' font-size='20' font-family='sans-serif'>关系五点阵（5张）</text>
+<g fill='#2f2352' stroke='#b79cff'><rect x='200' y='60' width='100' height='140' rx='10'/><rect x='80' y='90' width='100' height='140' rx='10'/><rect x='320' y='90' width='100' height='140' rx='10'/><rect x='200' y='90' width='100' height='140' rx='10'/><rect x='200' y='20' width='100' height='140' rx='10'/></g>
+<g fill='#fff' font-size='24' text-anchor='middle'><text x='250' y='144'>3</text><text x='130' y='174'>1</text><text x='370' y='174'>2</text><text x='250' y='174'>4</text><text x='250' y='104'>5</text></g>
+</svg>

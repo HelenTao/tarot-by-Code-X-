@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>塔罗分析助手</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>塔罗分析助手</h1>
+        <p>支持个人占卜与大众占卜：先输入问题并选择难度，推荐牌阵后录入抽牌结果，生成完整解读。</p>
+      </header>
+
+      <section class="card">
+        <h2>1) 占卜类型与客人信息</h2>
+
+        <fieldset>
+          <legend>占卜类型</legend>
+          <div class="difficulty-group">
+            <label><input type="radio" name="readingMode" value="personal" checked /> 个人占卜</label>
+            <label><input type="radio" name="readingMode" value="collective" /> 大众占卜（同一问题，三个意象）</label>
+          </div>
+        </fieldset>
+
+        <label for="question">问题</label>
+        <textarea id="question" rows="3" placeholder="例如：我和现任的关系未来三个月会如何发展？"></textarea>
+
+        <div id="collectiveSymbols" class="hidden">
+          <h3>大众占卜意象（可自定义）</h3>
+          <div class="position-row">
+            <label>意象A <input id="symbolA" type="text" value="意象A：月亮" /></label>
+            <label>意象B <input id="symbolB" type="text" value="意象B：钥匙" /></label>
+          </div>
+          <label>意象C <input id="symbolC" type="text" value="意象C：羽毛" /></label>
+        </div>
+
+        <fieldset>
+          <legend>解读难度</legend>
+          <div class="difficulty-group">
+            <label><input type="radio" name="difficulty" value="simple" checked /> 简单（3张牌以内）</label>
+            <label><input type="radio" name="difficulty" value="medium" /> 中级（3-6张牌）</label>
+            <label><input type="radio" name="difficulty" value="advanced" /> 高级（6-12张牌）</label>
+          </div>
+        </fieldset>
+
+        <button id="recommendBtn" type="button">推荐牌阵</button>
+      </section>
+
+      <section id="spreadSection" class="card hidden">
+        <h2>2) 推荐牌阵</h2>
+        <div id="spreadRecommendations"></div>
+      </section>
+
+      <section id="drawSection" class="card hidden">
+        <h2>3) 录入抽牌结果</h2>
+        <p id="selectedSpreadInfo"></p>
+        <div id="drawForm"></div>
+        <button id="analyzeBtn" type="button">生成解读</button>
+      </section>
+
+      <section id="resultSection" class="card hidden">
+        <h2>4) 最终解读</h2>
+        <article id="result"></article>
+      </section>
+
+      <footer>
+        <small>
+          牌意词条参考：
+          <a href="https://mofatarot.com/pages/taluopai-paiyi-jieshi" target="_blank" rel="noreferrer">mofatarot</a>
+          与
+          <a href="https://nes-tarot.com/tarot-cartomantic-meanings/" target="_blank" rel="noreferrer">nes-tarot</a>；
+          牌阵参考
+          <a href="https://mofatarot.com/blogs/taluopaijichuzhishi/%E5%A1%94%E7%BE%85%E7%89%8C%E5%8D%A0%E5%8D%9C%E7%89%8C%E9%99%A3%E5%A4%A7%E5%85%A8%E2%80%94%E6%8C%81%E7%BA%8C%E6%9B%B4%E6%96%B0%EF%BC%81" target="_blank" rel="noreferrer">MofaTarot 牌阵大全</a>
+        </small>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

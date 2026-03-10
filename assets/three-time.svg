@@ -1,0 +1,5 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='440' height='220' viewBox='0 0 440 220'>
+<rect width='440' height='220' fill='#141024'/><text x='20' y='34' fill='#e9ddff' font-size='20' font-family='sans-serif'>时间三角（3张）</text>
+<g fill='#2f2352' stroke='#b79cff'><rect x='35' y='65' width='100' height='140' rx='10'/><rect x='170' y='65' width='100' height='140' rx='10'/><rect x='305' y='65' width='100' height='140' rx='10'/></g>
+<g fill='#fff' font-size='30' text-anchor='middle'><text x='85' y='145'>1</text><text x='220' y='145'>2</text><text x='355' y='145'>3</text></g>
+</svg>
