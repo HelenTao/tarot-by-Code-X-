@@ -1,0 +1,8 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='620' height='300' viewBox='0 0 620 300'>
+<rect width='620' height='300' fill='#141024'/><text x='20' y='34' fill='#e9ddff' font-size='20' font-family='sans-serif'>年度十二宫（12张）</text>
+<g fill='#2f2352' stroke='#b79cff'>
+<rect x='260' y='20' width='100' height='70' rx='8'/><rect x='370' y='40' width='100' height='70' rx='8'/><rect x='450' y='100' width='100' height='70' rx='8'/><rect x='470' y='185' width='100' height='70' rx='8'/>
+<rect x='390' y='235' width='100' height='70' rx='8'/><rect x='280' y='245' width='100' height='70' rx='8'/><rect x='170' y='235' width='100' height='70' rx='8'/><rect x='60' y='185' width='100' height='70' rx='8'/>
+<rect x='40' y='100' width='100' height='70' rx='8'/><rect x='120' y='40' width='100' height='70' rx='8'/><rect x='200' y='10' width='100' height='70' rx='8'/><rect x='310' y='5' width='100' height='70' rx='8'/>
+</g>
+</svg>
